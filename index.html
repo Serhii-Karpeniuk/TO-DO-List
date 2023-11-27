@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <link rel="icon" type="image/x-icon" href="style/img/to-do img.webp">
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <section class="container__wrap">
+            <div class="page__header">
+                <div class="page__action">
+                    <input type="button" class="page__theme">
+                    <button type="button" class="page__reset">х</button>
+                </div>
+            </div>
+        </section>
+        <div class="time">
+            <p class="date"></p>
+
+            <p class="clock"></p>
+
+            <p class="timezone"></p>
+
+            <p class="day_of_year"></p>
+        </div>
+    </header>
+
+    <main>
+
+        <button type="button" class="delete__group_list">Delete group of list</button>
+        <div class="new__list">
+            <select id="list__menu">
+                <option id="list__elem">Lists</option>
+            </select>
+                <input type="text" id="input__new-list" placeholder="create new list">
+                <button class="newlist__btn" type="button">Create new List</button>
+
+        </div>
+
+        <div class="my__task" id="myTaskContainer">
+            <h2 class="act__task">Actual tasks</h2>
+
+            <div class="row">
+                <input type="text" id="input-box" class="anim" placeholder="add task">
+                <button class="add__btn" type="button">Add new task</button>
+
+            </div>
+            <ul id="list-container">
+
+            </ul>
+        </div>
+        <div id="overlay"></div>
+    </main>
+    <footer></footer>
+
+    <script  src="js/theme.js"></script>
+    <script  src="js/logic.js"></script>
+    <script  src="js/index.js"></script>
+    <script  src="js/anim.js"></script>
+</body>
+
+</html>
